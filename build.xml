@@ -16,6 +16,19 @@
     <target name="init">
         <mkdir dir="classes"/>
     </target>
+	
+	<target name="jar">
+	        <mkdir dir="D:/jar"/>
+	        <jar destfile="D:/jar/HelloWorld.jar" basedir="classes">
+	            <manifest>
+	                <attribute name="Main-Class" value="sg.edu.nus.iss.vmcs.Vmcs"/>
+	            </manifest>
+	        </jar>
+	    </target>
+
+	    <target name="run">
+	        <java jar="D:/jar/HelloWorld.jar" fork="true"/>
+	    </target>
 
 </project>
 

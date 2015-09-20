@@ -39,7 +39,7 @@ public class Vmcs {
     }
 
     public static void main(String args[]) {
-        Vmcs vmcs = new Vmcs(args[0]);
+        Vmcs vmcs = new Vmcs("C:\\Users\\Deepthi\\git\\Configuration-Management-CA\\vmcs.properties");
         vmcs.start();
     }
 }
